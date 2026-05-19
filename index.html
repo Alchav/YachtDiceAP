@@ -2554,6 +2554,7 @@
         var numRollsF = 0; // Maximum number of Rolls per turn
         var amRollsF = 6;
         var currentRolls = 0; // Current number of Rolls
+        var temporaryFragmentDice = 0; // Bonus die from dice fragments for this roll only
         var difficulty = 1; // Difficulty (1 easy, 4 extreme)
         
         var allowed_categories = [];
@@ -2895,6 +2896,35 @@
 
 
         // Function to handle roll action
+        function shouldProcFragmentBonus(currentFragments, fragmentsPerUnit) {
+            if (typeof fragmentBonusSucceeds === "function") {
+                return fragmentBonusSucceeds(currentFragments, fragmentsPerUnit);
+            }
+            if (fragmentsPerUnit <= 1) {
+                return false;
+            }
+            const fragmentRemainder = ((currentFragments % fragmentsPerUnit) + fragmentsPerUnit) % fragmentsPerUnit;
+            if (fragmentRemainder <= 0) {
+                return false;
+            }
+            return Math.random() < fragmentRemainder / fragmentsPerUnit;
+        }
+
+        function clearTemporaryFragmentDie() {
+            if (temporaryFragmentDice > 0) {
+                removeDice();
+                temporaryFragmentDice = 0;
+            }
+        }
+
+        function applyTemporaryFragmentDieForRoll() {
+            clearTemporaryFragmentDie();
+            if (shouldProcFragmentBonus(numDiceF, amDiceF)) {
+                addDice(1);
+                temporaryFragmentDice = 1;
+            }
+        }
+
         function handleRollAction() {
             if (!timerInterval) {
                 startTimer();
@@ -2906,8 +2936,12 @@
                 if (canRoll) {
                     pressedReset = false;
                     canRoll = false;
+                    applyTemporaryFragmentDieForRoll();
                     rollDiceAnimation(); // Call the rollDiceAnimation function instead of directly changing faces
                     currentRolls++;
+                    if (shouldProcFragmentBonus(numRollsF, amRollsF)) {
+                        currentRolls--;
+                    }
                     updateRollButton();
                     totalNumberRolls++;
                 }
@@ -3077,6 +3111,7 @@
 
 
         function nextTurn() {
+            clearTemporaryFragmentDie();
 
             currentRolls = 0;
             turnNumber += 1;
