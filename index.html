@@ -19,7 +19,7 @@
             overflow-y: auto;
             transition: background-image 2s ease;
 
-            background-image: url('Images/PatternStill.svg');
+            background-image: url('https://yacht-dice-ap.netlify.app/Images/PatternStill.svg');
             background-repeat: repeat;
             background-size: auto; /* or cover/contain as needed */
             font-family: Arial, sans-serif;
@@ -894,7 +894,7 @@
         <div class="tutoroll_container">
             <div class="header-and-button">
                 <!-- <h1 class="tutoroll_header">Yacht Dice</h1> -->
-                <img src="Images/LogoSuperStill.svg" alt="Logo" style="max-height: 300px;">
+                <img src="https://yacht-dice-ap.netlify.app/Images/LogoSuperStill.svg" alt="Logo" style="max-height: 300px;">
 
             </div>
 
@@ -980,7 +980,7 @@
             I'm not planning to do this again :3
         </span>
         <br> <br>
-        <img style="max-width: 10%; max-height: 10%;" src="Images/yachty.png" alt="Boat Image">
+        <img style="max-width: 10%; max-height: 10%;" src="https://yacht-dice-ap.netlify.app/Images/yachty.png" alt="Boat Image">
     </div>
 
 
@@ -1220,11 +1220,11 @@
                         <br><br>
                         <div id="musicplayerdiv">
                             <audio id="boatSound">
-                                <source src="Sounds/boat.mp3" type="audio/mpeg">
+                                <source src="https://yacht-dice-ap.netlify.app/Sounds/boat.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                             <audio id="newItemSound">
-                                <source src="Sounds/dicethrownewitem.mp3" type="audio/mpeg">
+                                <source src="https://yacht-dice-ap.netlify.app/Sounds/dicethrownewitem.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                             <div id="customControls"
@@ -1285,7 +1285,7 @@
                     </div>
                 </div>
                 <audio id="achievementSound">
-                    <source src="Sounds/achievement.mp3" type="audio/mpeg">
+                    <source src="https://yacht-dice-ap.netlify.app/Sounds/achievement.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
 
@@ -1440,7 +1440,7 @@
             </div>
         </div>
     </div>
-    <img id="boatImage" src="Images/yachty.png" alt="Boat Image">
+    <img id="boatImage" src="https://yacht-dice-ap.netlify.app/Images/yachty.png" alt="Boat Image">
 
 
     <script>
@@ -1476,23 +1476,23 @@
         }
 
         if(r < 0.001953125){
-            boatImage.src = "Images/boat.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boat.png";
         }else if(r < 0.021953125){
-            boatImage.src = "Images/JaxFlint.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/JaxFlint.png";
         }else if (r < 0.03){
-            boatImage.src = "Images/boaty_down.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boaty_down.png";
         }else if (r < 0.05){
-            boatImage.src = "Images/boaty_back.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boaty_back.png";
         }else if (r < 0.09){
-            boatImage.src = "Images/boaty.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/boaty.png";
         }else if (r < 0.12){
-            boatImage.src = "Images/chrisboat.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/chrisboat.png";
         } else if (r< 0.13){
-            boatImage.src = "Images/yachtychristmas.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/yachtychristmas.png";
         } else if (r< 0.48){
-            boatImage.src = "Images/YachtTank.webp";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/YachtTank.webp";
         } else {
-            boatImage.src = "Images/yachty.png";
+            boatImage.src = "https://yacht-dice-ap.netlify.app/Images/yachty.png";
         }
         
     </script>
@@ -1656,15 +1656,15 @@
         var playPauseButton = document.getElementById('playPauseButton');
         var currentTrackIndex = 0;
         var tracks = [
-            "Sounds/Dreams Interlace.mp3",
-            "Sounds/Interlude.mp3",
-            "Sounds/Yacht Dice.mp3",
-            "Sounds/Into The Waves.mp3",
-            "Sounds/Rolling Ambience.mp3",
-            "Sounds/In Your Eyes.mp3",
-            "Sounds/Lucky.mp3",
-            "Sounds/Final Game.mp3",
-            "Sounds/Full House.mp3"
+            "https://yacht-dice-ap.netlify.app/Sounds/Dreams Interlace.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Interlude.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Yacht Dice.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Into The Waves.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Rolling Ambience.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/In Your Eyes.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Lucky.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Final Game.mp3",
+            "https://yacht-dice-ap.netlify.app/Sounds/Full House.mp3"
             // Add more tracks here as needed
         ];
 
@@ -1699,11 +1699,11 @@
         //achievements
         let achievements = JSON.parse(localStorage.getItem('achievements')) || [];
         const achievementConditions = [
-            { id: 1, description: 'Score a Yacht', image: 'Achievement_pictures/a1.png' },
-            { id: 2, description: 'Win a Game', image: 'Achievement_pictures/a2.png' },
-            { id: 4, description: 'Reach 1000 points', image: 'Achievement_pictures/a4.png' },
-            { id: 3, description: 'Choose your own background', image: 'Achievement_pictures/a3.png' },
-            { id: 9999, description: 'More achievements soon maybe :)', image: 'Achievement_pictures/a9999.png' },
+            { id: 1, description: 'Score a Yacht', image: 'https://yacht-dice-ap.netlify.app/Achievement_pictures/a1.png' },
+            { id: 2, description: 'Win a Game', image: 'https://yacht-dice-ap.netlify.app/Achievement_pictures/a2.png' },
+            { id: 4, description: 'Reach 1000 points', image: 'https://yacht-dice-ap.netlify.app/Achievement_pictures/a4.png' },
+            { id: 3, description: 'Choose your own background', image: 'https://yacht-dice-ap.netlify.app/Achievement_pictures/a3.png' },
+            { id: 9999, description: 'More achievements soon maybe :)', image: 'https://yacht-dice-ap.netlify.app/Achievement_pictures/a9999.png' },
         ];
         function showAchievementDisplay(description, image) {
             const achievementDisplay = document.createElement('div');
@@ -1757,283 +1757,283 @@
         let diceFaces =
             [
                 [
-                    "Skins/GraphSVG/0O.svg",
-                    "Skins/GraphSVG/1O.svg",
-                    "Skins/GraphSVG/2O.svg",
-                    "Skins/GraphSVG/3O.svg",
-                    "Skins/GraphSVG/4O.svg",
-                    "Skins/GraphSVG/5O.svg",
-                    "Skins/GraphSVG/6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/0O.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/1O.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/2O.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/3O.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/4O.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/5O.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/6.svg"
                 ],
                 [
-                    "Skins/Red/0.png",
-                    "Skins/Red/1.png",
-                    "Skins/Red/2.png",
-                    "Skins/Red/3.png",
-                    "Skins/Red/4.png",
-                    "Skins/Red/5.png",
-                    "Skins/Red/6.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Red/0.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Red/1.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Red/2.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Red/3.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Red/4.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Red/5.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Red/6.png",
                 ],
                 [
-                    "Skins/Fruity/0.webp",
-                    "Skins/Fruity/1.webp",
-                    "Skins/Fruity/2.webp",
-                    "Skins/Fruity/3.webp",
-                    "Skins/Fruity/4.webp",
-                    "Skins/Fruity/5.webp",
-                    "Skins/Fruity/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Fruity/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Fruity/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Fruity/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Fruity/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Fruity/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Fruity/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Fruity/6.webp"
                 ],
                 [
-                    "Skins/Hearts/0.svg",
-                    "Skins/Hearts/1.svg",
-                    "Skins/Hearts/2.svg",
-                    "Skins/Hearts/3.svg",
-                    "Skins/Hearts/4.svg",
-                    "Skins/Hearts/5.svg",
-                    "Skins/Hearts/6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/Hearts/0.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hearts/1.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hearts/2.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hearts/3.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hearts/4.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hearts/5.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hearts/6.svg"
                 ],
                 [
-                    "Skins/GraphSVG/0OD.svg",
-                    "Skins/GraphSVG/1OD.svg",
-                    "Skins/GraphSVG/2OD.svg",
-                    "Skins/GraphSVG/3OD.svg",
-                    "Skins/GraphSVG/4OD.svg",
-                    "Skins/GraphSVG/5OD.svg",
-                    "Skins/GraphSVG/6D.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/0OD.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/1OD.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/2OD.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/3OD.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/4OD.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/5OD.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/6D.svg"
                 ],
                 [
-                    "Skins/Crystal/0.png",
-                    "Skins/Crystal/1.png",
-                    "Skins/Crystal/2.png",
-                    "Skins/Crystal/3.png",
-                    "Skins/Crystal/4.png",
-                    "Skins/Crystal/5.png",
-                    "Skins/Crystal/6.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Crystal/0.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Crystal/1.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Crystal/2.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Crystal/3.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Crystal/4.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Crystal/5.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Crystal/6.png",
                 ],
                 [
-                    "Skins/GraphSVG/0.svg",
-                    "Skins/GraphSVG/1.svg",
-                    "Skins/GraphSVG/2.svg",
-                    "Skins/GraphSVG/3.svg",
-                    "Skins/GraphSVG/4.svg",
-                    "Skins/GraphSVG/5.svg",
-                    "Skins/GraphSVG/6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/0.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/1.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/2.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/3.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/4.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/5.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/GraphSVG/6.svg"
                 ],
                 [
-                    "Skins/Blue/0.png",
-                    "Skins/Blue/1.png",
-                    "Skins/Blue/2.png",
-                    "Skins/Blue/3.png",
-                    "Skins/Blue/4.png",
-                    "Skins/Blue/5.png",
-                    "Skins/Blue/6.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Blue/0.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Blue/1.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Blue/2.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Blue/3.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Blue/4.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Blue/5.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Blue/6.png",
                 ],
                 [
-                    "Skins/Ladybug/0.webp",
-                    "Skins/Ladybug/1.webp",
-                    "Skins/Ladybug/2.webp",
-                    "Skins/Ladybug/3.webp",
-                    "Skins/Ladybug/4.webp",
-                    "Skins/Ladybug/5.webp",
-                    "Skins/Ladybug/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Ladybug/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ladybug/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ladybug/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ladybug/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ladybug/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ladybug/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ladybug/6.webp"
                 ],
                 [
-                    "Skins/Horror/0.webp",
-                    "Skins/Horror/1.webp",
-                    "Skins/Horror/2.webp",
-                    "Skins/Horror/3.webp",
-                    "Skins/Horror/4.webp",
-                    "Skins/Horror/5.webp",
-                    "Skins/Horror/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Horror/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Horror/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Horror/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Horror/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Horror/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Horror/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Horror/6.webp"
                 ],
                 [
-                    "Skins/Kids/0.webp",
-                    "Skins/Kids/1.webp",
-                    "Skins/Kids/2.webp",
-                    "Skins/Kids/3.webp",
-                    "Skins/Kids/4.webp",
-                    "Skins/Kids/5.webp",
-                    "Skins/Kids/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Kids/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kids/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kids/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kids/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kids/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kids/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kids/6.webp"
                 ],
                 [
-                    "Skins/Rubees/0.webp",
-                    "Skins/Rubees/1.webp",
-                    "Skins/Rubees/2.webp",
-                    "Skins/Rubees/3.webp",
-                    "Skins/Rubees/4.webp",
-                    "Skins/Rubees/5.webp",
-                    "Skins/Rubees/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Rubees/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Rubees/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Rubees/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Rubees/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Rubees/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Rubees/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Rubees/6.webp"
                 ],
                 [
-                    "Skins/Paper/0.webp",
-                    "Skins/Paper/1.webp",
-                    "Skins/Paper/2.webp",
-                    "Skins/Paper/3.webp",
-                    "Skins/Paper/4.webp",
-                    "Skins/Paper/5.webp",
-                    "Skins/Paper/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Paper/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Paper/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Paper/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Paper/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Paper/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Paper/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Paper/6.webp"
                 ],
                 [
-                    "Skins/Looker/0.webp",
-                    "Skins/Looker/1.webp",
-                    "Skins/Looker/2.webp",
-                    "Skins/Looker/3.webp",
-                    "Skins/Looker/4.webp",
-                    "Skins/Looker/5.webp",
-                    "Skins/Looker/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Looker/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Looker/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Looker/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Looker/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Looker/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Looker/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Looker/6.webp"
                 ],
                 [
-                    "Skins/APlogo2/0.svg",
-                    "Skins/APlogo2/1.svg",
-                    "Skins/APlogo2/2.svg",
-                    "Skins/APlogo2/3.svg",
-                    "Skins/APlogo2/4.svg",
-                    "Skins/APlogo2/5.svg",
-                    "Skins/APlogo2/6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo2/0.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo2/1.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo2/2.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo2/3.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo2/4.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo2/5.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo2/6.svg"
                 ],
                 [
-                    "Skins/Digital/digital0.svg",
-                    "Skins/Digital/digital1.svg",
-                    "Skins/Digital/digital2.svg",
-                    "Skins/Digital/digital3.svg",
-                    "Skins/Digital/digital4.svg",
-                    "Skins/Digital/digital5.svg",
-                    "Skins/Digital/digital6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/Digital/digital0.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Digital/digital1.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Digital/digital2.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Digital/digital3.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Digital/digital4.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Digital/digital5.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Digital/digital6.svg"
                 ],
                 [
-                    "Skins/Greenish/0.svg",
-                    "Skins/Greenish/1.svg",
-                    "Skins/Greenish/2.svg",
-                    "Skins/Greenish/3.svg",
-                    "Skins/Greenish/4.svg",
-                    "Skins/Greenish/5.svg",
-                    "Skins/Greenish/6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/Greenish/0.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Greenish/1.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Greenish/2.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Greenish/3.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Greenish/4.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Greenish/5.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Greenish/6.svg"
                 ],
                 [
-                    "Skins/Trip/0.webp",
-                    "Skins/Trip/1.webp",
-                    "Skins/Trip/2.webp",
-                    "Skins/Trip/3.webp",
-                    "Skins/Trip/4.webp",
-                    "Skins/Trip/5.webp",
-                    "Skins/Trip/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Trip/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Trip/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Trip/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Trip/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Trip/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Trip/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Trip/6.webp"
                 ],
                 [
-                    "Skins/Shield/shield0.svg",
-                    "Skins/Shield/shield1.svg",
-                    "Skins/Shield/shield2.svg",
-                    "Skins/Shield/shield3.svg",
-                    "Skins/Shield/shield4.svg",
-                    "Skins/Shield/shield5.svg",
-                    "Skins/Shield/shield6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/Shield/shield0.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Shield/shield1.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Shield/shield2.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Shield/shield3.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Shield/shield4.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Shield/shield5.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Shield/shield6.svg"
                 ],
                 [
-                    "Skins/Kingship/KH0.svg",
-                    "Skins/Kingship/KH1.svg",
-                    "Skins/Kingship/KH2.svg",
-                    "Skins/Kingship/KH3.svg",
-                    "Skins/Kingship/KH4.svg",
-                    "Skins/Kingship/KH5.svg",
-                    "Skins/Kingship/KH6.svg"
+                    "https://yacht-dice-ap.netlify.app/Skins/Kingship/KH0.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kingship/KH1.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kingship/KH2.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kingship/KH3.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kingship/KH4.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kingship/KH5.svg",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kingship/KH6.svg"
                 ],
                 [
-                    "Skins/Lingo/0.webp",
-                    "Skins/Lingo/1.webp",
-                    "Skins/Lingo/2.webp",
-                    "Skins/Lingo/3.webp",
-                    "Skins/Lingo/4.webp",
-                    "Skins/Lingo/5.webp",
-                    "Skins/Lingo/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Lingo/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Lingo/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Lingo/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Lingo/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Lingo/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Lingo/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Lingo/6.webp"
                 ],
                 [
-                    "Skins/MS46/0.webp",
-                    "Skins/MS46/1.webp",
-                    "Skins/MS46/2.webp",
-                    "Skins/MS46/3.webp",
-                    "Skins/MS46/4.webp",
-                    "Skins/MS46/5.webp",
-                    "Skins/MS46/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/MS46/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/MS46/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/MS46/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/MS46/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/MS46/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/MS46/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/MS46/6.webp"
                 ],
                 [
-                    "Skins/APlogo/0.png",
-                    "Skins/APlogo/1.png",
-                    "Skins/APlogo/2.png",
-                    "Skins/APlogo/3.png",
-                    "Skins/APlogo/4.png",
-                    "Skins/APlogo/5.png",
-                    "Skins/APlogo/6.png"
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo/0.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo/1.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo/2.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo/3.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo/4.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo/5.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/APlogo/6.png"
                 ],
                 [
-                    "Skins/Hana/0.webp",
-                    "Skins/Hana/1A.webp",
-                    "Skins/Hana/2A.webp",
-                    "Skins/Hana/3A.webp",
-                    "Skins/Hana/4A.webp",
-                    "Skins/Hana/5A.webp",
-                    "Skins/Hana/6A.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/1A.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/2A.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/3A.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/4A.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/5A.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/6A.webp"
                 ],
                 [
-                    "Skins/Hana/0.webp",
-                    "Skins/Hana/1L.webp",
-                    "Skins/Hana/2L.webp",
-                    "Skins/Hana/3L.webp",
-                    "Skins/Hana/4L.webp",
-                    "Skins/Hana/5L.webp",
-                    "Skins/Hana/6L.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/1L.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/2L.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/3L.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/4L.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/5L.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Hana/6L.webp"
                 ],
                 [
-                    "Skins/Unknown/0.webp",
-                    "Skins/Unknown/1.webp",
-                    "Skins/Unknown/2.webp",
-                    "Skins/Unknown/3.webp",
-                    "Skins/Unknown/4.webp",
-                    "Skins/Unknown/5.webp",
-                    "Skins/Unknown/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Unknown/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Unknown/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Unknown/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Unknown/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Unknown/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Unknown/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Unknown/6.webp"
                 ],
                 [
-                    "Skins/Ruben/0.webp",
-                    "Skins/Ruben/1.webp",
-                    "Skins/Ruben/2.webp",
-                    "Skins/Ruben/3.webp",
-                    "Skins/Ruben/4.webp",
-                    "Skins/Ruben/5.webp",
-                    "Skins/Ruben/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Ruben/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ruben/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ruben/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ruben/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ruben/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ruben/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Ruben/6.webp"
                 ],
                 [
-                    "Skins/Cubes/0.webp",
-                    "Skins/Cubes/1.webp",
-                    "Skins/Cubes/2.webp",
-                    "Skins/Cubes/3.webp",
-                    "Skins/Cubes/4.webp",
-                    "Skins/Cubes/5.webp",
-                    "Skins/Cubes/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Cubes/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Cubes/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Cubes/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Cubes/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Cubes/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Cubes/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Cubes/6.webp"
                 ],
                 [
-                    "Skins/Kanji/0.webp",
-                    "Skins/Kanji/1.webp",
-                    "Skins/Kanji/2.webp",
-                    "Skins/Kanji/3.webp",
-                    "Skins/Kanji/4.webp",
-                    "Skins/Kanji/5.webp",
-                    "Skins/Kanji/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/Kanji/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kanji/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kanji/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kanji/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kanji/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kanji/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/Kanji/6.webp"
                 ],
                 [
-                    "Skins/QR/0.webp",
-                    "Skins/QR/1.webp",
-                    "Skins/QR/2.webp",
-                    "Skins/QR/3.webp",
-                    "Skins/QR/4.webp",
-                    "Skins/QR/5.webp",
-                    "Skins/QR/6.webp"
+                    "https://yacht-dice-ap.netlify.app/Skins/QR/0.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/QR/1.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/QR/2.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/QR/3.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/QR/4.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/QR/5.webp",
+                    "https://yacht-dice-ap.netlify.app/Skins/QR/6.webp"
                 ],
                 [
-                    "Skins/Graph/0.png",
-                    "Skins/Graph/1.png",
-                    "Skins/Graph/2.png",
-                    "Skins/Graph/3.png",
-                    "Skins/Graph/4.png",
-                    "Skins/Graph/5.png",
-                    "Skins/Graph/6.png"
+                    "https://yacht-dice-ap.netlify.app/Skins/Graph/0.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Graph/1.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Graph/2.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Graph/3.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Graph/4.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Graph/5.png",
+                    "https://yacht-dice-ap.netlify.app/Skins/Graph/6.png"
                 ]
             ];
         let wins = localStorage.getItem("amount_of_wins");
@@ -2554,6 +2554,7 @@
         var numRollsF = 0; // Maximum number of Rolls per turn
         var amRollsF = 6;
         var currentRolls = 0; // Current number of Rolls
+        var temporaryFragmentDice = 0; // Bonus die from dice fragments for this roll only
         var difficulty = 1; // Difficulty (1 easy, 4 extreme)
         
         var allowed_categories = [];
@@ -2895,6 +2896,35 @@
 
 
         // Function to handle roll action
+        function shouldProcFragmentBonus(currentFragments, fragmentsPerUnit) {
+            if (typeof fragmentBonusSucceeds === "function") {
+                return fragmentBonusSucceeds(currentFragments, fragmentsPerUnit);
+            }
+            if (fragmentsPerUnit <= 1) {
+                return false;
+            }
+            const fragmentRemainder = ((currentFragments % fragmentsPerUnit) + fragmentsPerUnit) % fragmentsPerUnit;
+            if (fragmentRemainder <= 0) {
+                return false;
+            }
+            return Math.random() < fragmentRemainder / fragmentsPerUnit;
+        }
+
+        function clearTemporaryFragmentDie() {
+            if (temporaryFragmentDice > 0) {
+                removeDice();
+                temporaryFragmentDice = 0;
+            }
+        }
+
+        function applyTemporaryFragmentDieForRoll() {
+            clearTemporaryFragmentDie();
+            if (shouldProcFragmentBonus(numDiceF, amDiceF)) {
+                addDice(1);
+                temporaryFragmentDice = 1;
+            }
+        }
+
         function handleRollAction() {
             if (!timerInterval) {
                 startTimer();
@@ -2906,8 +2936,12 @@
                 if (canRoll) {
                     pressedReset = false;
                     canRoll = false;
+                    applyTemporaryFragmentDieForRoll();
                     rollDiceAnimation(); // Call the rollDiceAnimation function instead of directly changing faces
                     currentRolls++;
+                    if (shouldProcFragmentBonus(numRollsF, amRollsF)) {
+                        currentRolls--;
+                    }
                     updateRollButton();
                     totalNumberRolls++;
                 }
@@ -3077,6 +3111,7 @@
 
 
         function nextTurn() {
+            clearTemporaryFragmentDie();
 
             currentRolls = 0;
             turnNumber += 1;
@@ -3176,7 +3211,7 @@
             keydownListeners[i] = handleKeydown;
 
             let rollSound = document.createElement("audio");
-            rollSound.src = "Sounds/rollsound.mp3"; // Set the source of the roll sound
+            rollSound.src = "https://yacht-dice-ap.netlify.app/Sounds/rollsound.mp3"; // Set the source of the roll sound
             rollSound.id = `rollSound${i}`; // Set an ID for the roll sound
             rollSound.volume = document.getElementById("soundEffectVolume").value
 
@@ -6107,7 +6142,7 @@
 
         function resetBackground() {
             // Remove background image from the body
-            document.body.style.backgroundImage = 'url("Images/PatternStill.svg")';
+            document.body.style.backgroundImage = 'url("https://yacht-dice-ap.netlify.app/Images/PatternStill.svg")';
 
             // Reset background image properties (if they were set previously)
             document.body.style.backgroundRepeat = 'initial';
