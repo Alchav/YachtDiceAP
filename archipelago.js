@@ -89,6 +89,20 @@ var defaultClientOptions = {
 var targetVersion = { major: 0, minor: 5, build: 1 };
 var libraryVersion = "2.0.4";
 
+function fragmentBonusSucceeds(currentFragments, fragmentsPerUnit) {
+  if (fragmentsPerUnit <= 1) {
+    return false;
+  }
+  const fragmentRemainder = ((currentFragments % fragmentsPerUnit) + fragmentsPerUnit) % fragmentsPerUnit;
+  if (fragmentRemainder <= 0) {
+    return false;
+  }
+  return Math.random() < fragmentRemainder / fragmentsPerUnit;
+}
+if (typeof globalThis !== "undefined") {
+  globalThis.fragmentBonusSucceeds = fragmentBonusSucceeds;
+}
+
 // src/utils.ts
 function uuid() {
   const uuid2 = [];
